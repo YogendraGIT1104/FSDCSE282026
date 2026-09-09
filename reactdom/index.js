@@ -16,14 +16,20 @@ const divi = React.createElement(
   { style: { border: "3px dotted black" } },
   h1,
   h2,
-  image
+  image,
 );
 
-const name   = React.createElement('h1',{color:"Blue"},'Yogendra');
-const Skills = React.createElement("h1", { color: "blue" },"Java ","Python ","html");
+const name = React.createElement("h1", { color: "Blue" }, "Yogendra");
+const Skills = React.createElement(
+  "h1",
+  { color: "blue" },
+  "Java ",
+  "Python ",
+  "html",
+);
 
-const div = React.createElement("div", { color:" Blue "}, name ,Skills);
+const div = React.createElement("div", { color: " Blue " }, name, Skills);
 // root.render(h2);
 // root.render(h1);
-root.render(div);
-
+const hx = <h2>"Welcome"</h2>;
+root.render(hx);
