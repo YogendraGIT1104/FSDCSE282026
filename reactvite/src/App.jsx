@@ -1,17 +1,10 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import './App.css'
-import Icard from './components/Icard'
+import IcardGallery from './components/IcardGallery';
 
-function App(){
+function App() {
   return (
-    <div style = {{color:'red',border:'2px solid yellow',heigth:'200px',width:'200px'}}>
-        <h2>Welcome to react</h2>
-        <Icard></Icard>
-    </div>
-  )
+    <IcardGallery />
+  );
 }
 
-export default App
+export default App;
+
