@@ -1,10 +1,7 @@
-import IcardGallery from './components/IcardGallery';
+import StateHandling from "./components/statehandling";
 
 function App() {
-  return (
-    <IcardGallery />
-  );
+  return <StateHandling />;
 }
 
 export default App;
-

@@ -1,14 +1,35 @@
+
 import React from "react";
 import Icard from "./Icard";
 import result from "../assets/result.png";
 
 function IcardGallery() {
-  const student = {
-    pic: result,
-    name: "Yogendra",
-    rollNo: "12234546554",
-    college: "ABES",
-  };
+  const student = [
+    {
+      pic: result,
+      name: "Yogendra",
+      rollNo: "122",
+      college: "ABES",
+    },
+    {
+      pic: result,
+      name: "Sexu",
+      rollNo: "098765",
+      college: "ABES",
+    },
+    {
+      pic: result,
+      name: "Kisi ko to mile",
+      rollNo: "3458654",
+      college: "ABES",
+    },
+    {
+      pic: result,
+      name: "The yatharth sharma",
+      rollNo: "45768",
+      college: "ABES",
+    },
+  ];
 
   return (
     <div
@@ -19,14 +40,12 @@ function IcardGallery() {
         padding: "20px",
       }}
     >
-      <Icard
-        pic={student.pic}
-        name={student.name}
-        rollNo={student.rollNo}
-        college={student.college}
-      />
+      {student.map((element) => (
+          <Icard data={element} />
+      ))}
     </div>
   );
 }
 
 export default IcardGallery;
+
